@@ -1,0 +1,10 @@
+.DS_Store
+.env
+.env.*
+*.log
+*.map
+*.bak
+*.zip
+*.tar
+*.tar.gz
+*.tgz

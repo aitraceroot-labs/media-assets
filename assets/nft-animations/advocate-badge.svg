@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Advocate Badge</title>
+  <desc id="desc">Animated Advocate Badge with linked referral nodes, broadcast waves, and a bright social signal core.</desc>
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="44%" r="72%">
+      <stop offset="0%" stop-color="#3b1f2a"/>
+      <stop offset="48%" stop-color="#111115"/>
+      <stop offset="100%" stop-color="#050506"/>
+    </radialGradient>
+    <linearGradient id="frame" x1="18%" y1="14%" x2="84%" y2="90%">
+      <stop offset="0%" stop-color="#fff5d4"/>
+      <stop offset="40%" stop-color="#f5a524"/>
+      <stop offset="72%" stop-color="#7c2d12"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+    <linearGradient id="core" x1="12%" y1="0%" x2="88%" y2="100%">
+      <stop offset="0%" stop-color="#ffec99"/>
+      <stop offset="48%" stop-color="#ff6b6b"/>
+      <stop offset="100%" stop-color="#7dd3fc"/>
+    </linearGradient>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="14" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 1 0 0 0 0 0.44 0 0 0 0 0.18 0 0 0 0.85 0"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="26" stdDeviation="28" flood-color="#000000" flood-opacity="0.55"/>
+    </filter>
+    <g id="artMark">
+      <path d="M-74 26 L-58 -36 L-42 26 L-53 26 L-56 12 L-60 12 L-63 26 Z M-58 -9 L-56 3 L-60 3 Z"/>
+      <path d="M-28 -36 H-4 C10 -36 19 -27 19 -14 C19 -5 15 1 8 5 L22 26 H8 L-4 9 H-16 V26 H-28 Z M-16 -25 V-3 H-6 C1 -3 6 -7 6 -14 C6 -21 1 -25 -6 -25 Z"/>
+      <path d="M35 -36 H82 V-24 H64 V26 H52 V-24 H35 Z"/>
+    </g>
+  </defs>
+
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+
+  <g transform="translate(512 512)" filter="url(#shadow)">
+    <circle r="410" fill="#151217" stroke="#3a2224" stroke-width="3"/>
+    <circle r="354" fill="#1d1718" stroke="url(#frame)" stroke-width="18"/>
+    <circle r="292" fill="#211b1c" stroke="#58311f" stroke-width="2"/>
+
+    <g fill="none" stroke-linecap="round" opacity="0.65">
+      <circle r="188" stroke="#ffba4a" stroke-width="5">
+        <animate attributeName="r" values="178;228;178" dur="3s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.8;0.12;0.8" dur="3s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="246" stroke="#fb7185" stroke-width="4">
+        <animate attributeName="r" values="220;292;220" dur="3s" begin="0.75s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.5;0.08;0.5" dur="3s" begin="0.75s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <g filter="url(#glow)">
+      <path d="M-156 -46 H-48 L108 -132 C132 -145 162 -128 162 -100 V100 C162 128 132 145 108 132 L-48 46 H-156 C-184 46 -206 24 -206 -4 V4 C-206 -24 -184 -46 -156 -46 Z" fill="url(#core)"/>
+      <rect x="-238" y="-70" width="86" height="140" rx="34" fill="#f8fafc"/>
+      <path d="M-112 48 L-70 162 H2 L-42 48 Z" fill="#9f3412"/>
+      <circle cx="158" cy="-120" r="18" fill="#ffec99">
+        <animate attributeName="cy" values="-120;-134;-120" dur="2.2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="218" cy="0" r="18" fill="#7dd3fc">
+        <animate attributeName="cx" values="218;236;218" dur="2.2s" begin="0.35s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="158" cy="120" r="18" fill="#ffec99">
+        <animate attributeName="cy" values="120;134;120" dur="2.2s" begin="0.7s" repeatCount="indefinite"/>
+      </circle>
+      <path d="M162 -100 L158 -120 M162 0 H218 M162 100 L158 120" stroke="#fff7ed" stroke-width="8" stroke-linecap="round" fill="none"/>
+      <g transform="translate(0 112)" opacity="0.9">
+        <use href="#artMark" transform="translate(3 4)" fill="#2b1519" opacity="0.85"/>
+        <use href="#artMark" fill="#fff2da" stroke="#fffaf0" stroke-opacity="0.72" stroke-width="2" stroke-linejoin="round"/>
+      </g>
+    </g>
+
+    <g fill="#ffba4a">
+      <circle cx="-276" cy="-188" r="10">
+        <animate attributeName="opacity" values="0.2;1;0.2" dur="1.8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="-304" cy="12" r="8">
+        <animate attributeName="opacity" values="1;0.2;1" dur="1.8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="-238" cy="210" r="10">
+        <animate attributeName="opacity" values="0.2;1;0.2" dur="1.8s" begin="0.45s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+  </g>
+</svg>

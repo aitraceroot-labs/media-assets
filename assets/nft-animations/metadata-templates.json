@@ -1,0 +1,32 @@
+{
+  "pioneer": {
+    "name": "AiTraceRoot Pioneer Badge",
+    "description": "A free-mint badge for early AiTraceRoot visitors.",
+    "animation_url": "ipfs://REPLACE_WITH_PIONEER_BADGE_SVG",
+    "attributes": [
+      { "trait_type": "Badge Type", "value": "Pioneer" },
+      { "trait_type": "Distribution", "value": "Free Mint" },
+      { "trait_type": "Wallet Limit", "value": "One Per Wallet" }
+    ]
+  },
+  "advocate": {
+    "name": "AiTraceRoot Advocate Badge",
+    "description": "A referral achievement badge for wallets that bring 10 valid first-level invitees to AiTraceRoot.",
+    "animation_url": "ipfs://REPLACE_WITH_ADVOCATE_BADGE_SVG",
+    "attributes": [
+      { "trait_type": "Badge Type", "value": "Advocate" },
+      { "trait_type": "Distribution", "value": "Referral Airdrop" },
+      { "trait_type": "Requirement", "value": "10 Valid Invitees" }
+    ]
+  },
+  "builder": {
+    "name": "AiTraceRoot Builder Badge",
+    "description": "An ecosystem contributor badge distributed by the AiTraceRoot platform.",
+    "animation_url": "ipfs://REPLACE_WITH_BUILDER_BADGE_SVG",
+    "attributes": [
+      { "trait_type": "Badge Type", "value": "Builder" },
+      { "trait_type": "Distribution", "value": "Platform Airdrop" },
+      { "trait_type": "Wallet Limit", "value": "One Per Wallet" }
+    ]
+  }
+}
